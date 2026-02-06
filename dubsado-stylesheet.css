@@ -1,0 +1,259 @@
+/* =========================
+   FONT IMPORTS
+   ========================= */
+
+@font-face { 
+font-family: 'IvyPresto Display Thin'; 
+src: url('https://static.showit.co/file/CazFs-zxdT1JbEJSdk_n6g/233968/ivyprestodisplay-thin.woff') format('woff'), 
+url('https://static.showit.co/file/nTAdMX2jJalKdTJV74q2Og/233968/ivypresto_display_thin.woff2') format('woff2'), 
+url('https://static.showit.co/file/rQCAu9xN6EH7wOfUFDQong/233968/ivypresto_thin.ttf') format('truetype');
+font-weight: thin; 
+font-style: normal; 
+}
+
+@font-face { 
+font-family: 'TT Ramillas Italic'; 
+src: url('https://static.showit.co/file/G-FQd4qRULAzxfNrAcmn4w/233968/font.woff') format('woff'), 
+url('https://static.showit.co/file/xD6rP9AcGGg32OuQrWi50Q/233968/ttramillas_italic_font.woff2') format('woff2'), 
+url('https://static.showit.co/file/l0NqMm5d4VohG2S97JzatA/233968/ttramillas_italic_font.ttf') format('truetype');
+font-weight: normal; 
+font-style: italic; 
+}
+
+@font-face { 
+font-family: 'AlegreyaSans'; 
+src: url('https://static.showit.co/file/5YNzahl2xvyRC_wHAI5YGg/233968/alegreyasans-regular.woff') format('woff'), 
+url('https://static.showit.co/file/22dh_YczHkhj9a4f0_A9EQ/233968/alegreyasans-regular.woff2') format('woff2'), 
+url('https://static.showit.co/file/Tu4Gs4PcPCWyL6aekqCnKg/233968/alegreyasans-regular.ttf') format('truetype');
+font-weight: normal; 
+font-style: italic; 
+}
+
+@font-face { 
+font-family: 'JuniperandSageUpright'; 
+src: url('https://static.showit.co/file/kNZanvhdqmJeV4bWfTN4wg/233968/juniper-and-sage-upright.woff') format('woff'), 
+url('https://static.showit.co/file/2C9EWWY23g81Iop33RT3zg/233968/juniperandsageupright.woff2') format('woff2'), 
+url('https://static.showit.co/file/AmUzpi5TtF-teua8xgVnbQ/233968/juniperandsageupright.ttf') format('truetype');
+font-weight: normal; 
+font-style: italic; 
+}
+
+
+/* =========================
+   FONTS STYLES
+   ========================= */
+
+.dubsado-form, .dubsado-form h1  {
+    font-family: "IvyPresto Display Thin", serif;
+    color: #000000;
+}
+
+.dubsado-form h2  {
+    font-family: "TT Ramillas Italic", serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #000000;
+}
+
+.dubsado-form h3  {
+    font-family: "AlegreyaSans";
+    color: #000000;
+}
+
+.dubsado-form h4  {
+    font-family: "JuniperandSageUpright";
+    color: #000000;
+}
+
+.dubsado-form p  {
+    font-family: "Helvetica";
+    color: #000000;
+}
+
+
+/* =========================
+   PACKAGE BUTTON STYLES
+   ========================= */
+
+
+/* Package button unselected */
+.form-package-element .btn.btn-squared.border-around {
+    font-family: "Helvetica";
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 15px 25px;
+    background-color:#F6E5D6;
+    border-color:#C06917;
+    border-width:2px;
+    border-radius:40px;
+    width:200px;
+    transition: 0.5s;
+}
+
+/* Package button unselected hover */
+.form-package-element .packageNotSelected .btn.btn-squared.border-around:hover {
+    background-color: #C06917!important;
+    border-color:#C06917!important;
+    color:white!important;
+}
+
+/* Package button selected */
+.form-package-element .packageSelected .btn.btn-squared.border-around{
+    background-color: #C06917!important;
+    border-color:#C06917!important;
+    color:white!important;
+}
+
+/* Change button text to selected */
+.packageSelected .btn:after{
+    content: "ED";
+}
+
+/* =========================
+    HEADER BAR
+   ========================= */
+
+/* Proposal tabs background */
+.client-view-tabs {
+    padding: 5px 15px;
+    background-color:#CAB279!important;
+  }
+
+.form-viewer.dubsado-form {
+    padding: 0px !important;
+}
+
+/* Proposal tabs text */
+.client-view-tabs-col-label{
+    color:#FFFFFF;
+    letter-spacing:2px!important;
+    font-size: 14px!important;
+    text-transform:uppercase;
+    font-family:AlegreyaSans!important;
+}
+
+/* Proposal tabs underline */
+.client-view-tabs-col div {
+    display: none;
+    }
+
+/* Proposal tabs text hover color */
+.client-view-tabs-col-label:hover{   
+    color:#000000!important;
+}
+
+/* =========================
+    Buttons & Totals
+   ========================= */
+
+/* Submit button --- use !important */
+.submit-form-button {
+    background-color: #F6E5D6!important;
+    border: 1px solid #C06917!important;
+    border-radius: 40px!important;
+    border-width: 1px!important;
+    color: #000000!important;
+    padding: 15px 20px!important;
+    font-weight: normal!important;
+    text-transform: uppercase!important;
+    font-size: 12px!important;
+    box-shadow: 0px 0px 0px 0px!important;
+    line-height: 0;
+    font-family: "Helvetica"!important;
+  	width:200px!important;
+ 		transition: 0.5s!important;
+}
+
+/* Submit button on hover--- use !important */
+.submit-form-button:hover {
+    background-color: #C06917!important;
+    color: #FFFFFF!important;
+}
+
+/* Proposal total */
+.proposal-total {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/* Questionnaire save draft button */
+.save-draft-button {
+    background-color: #F6E5D6;
+    border-color: #C06917;
+    border-radius: 40px;
+    border-width: 1px;
+    color: #000000;
+    padding: 15px 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0px 0px 0px 0px;
+    line-height: 0;
+    font-family: "Helvetica";
+  	width:200px;
+ 		transition: 0.5s;
+}
+
+/* Save draft button on hover */
+.save-draft-button:hover {
+    background-color: #C06917;
+    color: #FFFFFF;
+}
+
+/* Save to PDF button */
+.pull-right button.dub-btn{
+    background-color: #F6E5D6;
+    border-color: #C06917;
+    border-radius: 40px;
+    border-width: 1px;
+    color: #000000;
+    padding: 15px 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0px 0px 0px 0px;
+    line-height: 0;
+    font-family: "Helvetica";
+  	width:200px;
+ 		transition: 0.5s;
+}
+
+/* Display PDF button on hover */
+.pull-right button.dub-btn{
+    background-color: #C06917;
+    color: #FFFFFF;
+}
+
+/* Client Portal Button */
+ .btn.btn-default.ng-scope{
+    background-color: #F6E5D6;
+    border-color: #C06917;
+    border-radius: 40px;
+    border-width: 1px;
+    color: #000000;
+    padding: 15px 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0px 0px 0px 0px;
+    line-height: 0;
+    font-family: "Helvetica";
+  	width:200px;
+ 		transition: 0.5s;
+}
+
+/* Display Client Portal button on hover */
+.hidden-print.btn.btn-default.ng-scope:hover{
+    background-color: #C06917;
+    color: #FFFFFF;
+}
+
+.toast-warning {
+    background-color: #C06917;
+}
+
+#toast-container > div{
+color:#FFFFFF;
+}
+
