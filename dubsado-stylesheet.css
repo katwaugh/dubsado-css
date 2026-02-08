@@ -147,6 +147,12 @@ font-style: italic;
     Buttons & Totals
    ========================= */
 
+/* Full-width hero override */
+.dubsado-form {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
 /* Submit button --- use !important */
 .submit-form-button {
     background-color: #F6E5D6!important;
