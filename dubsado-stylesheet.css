@@ -7,7 +7,7 @@ font-family: 'IvyPresto Display Thin';
 src: url('https://static.showit.co/file/CazFs-zxdT1JbEJSdk_n6g/233968/ivyprestodisplay-thin.woff') format('woff'), 
 url('https://static.showit.co/file/nTAdMX2jJalKdTJV74q2Og/233968/ivypresto_display_thin.woff2') format('woff2'), 
 url('https://static.showit.co/file/rQCAu9xN6EH7wOfUFDQong/233968/ivypresto_thin.ttf') format('truetype');
-font-weight: thin; 
+font-weight: 100; 
 font-style: normal; 
 }
 
