@@ -26,7 +26,6 @@ src: url('https://static.showit.co/file/5YNzahl2xvyRC_wHAI5YGg/233968/alegreyasa
 url('https://static.showit.co/file/22dh_YczHkhj9a4f0_A9EQ/233968/alegreyasans-regular.woff2') format('woff2'), 
 url('https://static.showit.co/file/Tu4Gs4PcPCWyL6aekqCnKg/233968/alegreyasans-regular.ttf') format('truetype');
 font-weight: normal; 
-font-style: italic; 
 }
 
 @font-face { 
@@ -35,7 +34,6 @@ src: url('https://static.showit.co/file/kNZanvhdqmJeV4bWfTN4wg/233968/juniper-an
 url('https://static.showit.co/file/2C9EWWY23g81Iop33RT3zg/233968/juniperandsageupright.woff2') format('woff2'), 
 url('https://static.showit.co/file/AmUzpi5TtF-teua8xgVnbQ/233968/juniperandsageupright.ttf') format('truetype');
 font-weight: normal; 
-font-style: italic; 
 }
 
 
@@ -78,36 +76,45 @@ font-style: italic;
 
 /* Package button unselected */
     span.btn.btn-squared.border-around {
-        visibility: hidden;
-    }
-    span.btn.btn-squared.border-around:after {
-        visibility: visible;
-        content: "I'm Ready";
-        display: block;
-        font-family: "Helvetica";
-        color: #000000;
-        text-transform: uppercase;
-        font-weight: normal;
-        background-color:#F6E5D6;
-        border:2px solid;
-        border-color:#C06917;
-        border-radius:40px;
-        transition: 0.5s;
-        padding: 11px 36px;
+        font-family: "Helvetica"!important;
+        color: #000000!important;
+        text-transform: uppercase!important;
+        font-weight: normal!important;
+        background-color:#F6E5D6!important;
+        border:2px solid!important;
+        border-color:#C06917!important;
+        border-radius:40px!important;
+        transition: 0.5s!important;
+        padding: 11px 36px!important;
     }
 
 /* Package button unselected hover */
-    span.btn.btn-squared.border-around:hover::after {
+    span.btn.btn-squared.border-around:hover {
        background-color: #C06917!important;
        border-color:#C06917!important;
        color:white!important;
 }
 
-.packageSelected span.btn.btn-squared.border-around:after {
+/* Package button selected style */
+.packageSelected span.btn.btn-squared.border-around {
        background-color: #C06917!important;
-    border-color:#C06917!important;
-    color:white!important;
+       border-color:#C06917!important;
+       color:white!important;
     }
+
+/* Base package container */
+.form-package-element {
+   transition: 0.3s ease;
+   border-radius: 16px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+/* Selected package */
+.form-package-element:has(.packageSelected) {
+   background: #F6E5D6;
+   border: 2px solid #C06917;
+}
 
 
 /* =========================
@@ -130,7 +137,7 @@ font-style: italic;
     letter-spacing:2px!important;
     font-size: 14px!important;
     text-transform:uppercase;
-    font-family:AlegreyaSans!important;
+    font-family: "AlegreyaSans"!important;
 }
 
 /* Proposal tabs underline */
@@ -144,14 +151,8 @@ font-style: italic;
 }
 
 /* =========================
-    Buttons & Totals
+    Buttons 
    ========================= */
-
-/* Full-width hero override */
-.dubsado-form {
-    max-width: 100% !important;
-    padding: 0 !important;
-}
 
 /* Submit button --- use !important */
 .submit-form-button {
@@ -175,12 +176,6 @@ font-style: italic;
 .submit-form-button:hover {
     background-color: #C06917!important;
     color: #FFFFFF!important;
-}
-
-/* Proposal total */
-.proposal-total {
-    color: #000000;
-    text-transform: uppercase;
 }
 
 /* Questionnaire save draft button */
@@ -207,52 +202,104 @@ font-style: italic;
     color: #FFFFFF;
 }
 
-/* Save to PDF button */
-.pull-right button.dub-btn{
-    background-color: #F6E5D6;
-    border-color: #C06917;
-    border-radius: 40px;
-    border-width: 1px;
-    color: #000000;
-    padding: 15px 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 12px;
-    box-shadow: 0px 0px 0px 0px;
-    line-height: 0;
-    font-family: "Helvetica";
-  	width:200px;
- 		transition: 0.5s;
+/* PDF download button */
+.pdf-button {
+   background-color:transparent!important;
+   border:0px;
+   font-weight:bold;
+   font-size:16px;
+   color:white!important;
+   text-transform:uppercase;
+   position: absolute;
+   right: 24px;
 }
 
-/* Display PDF button on hover */
-.pull-right button.dub-btn{
-    background-color: #C06917;
-    color: #FFFFFF;
+/* PDF download button icon --- use !important */
+.pdf-button svg {
+   color:white!important
 }
 
-/* Client Portal Button */
- .btn.btn-default.ng-scope{
-    background-color: #F6E5D6;
-    border-color: #C06917;
-    border-radius: 40px;
-    border-width: 1px;
-    color: #000000;
-    padding: 15px 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 12px;
-    box-shadow: 0px 0px 0px 0px;
-    line-height: 0;
-    font-family: "Helvetica";
-  	width:200px;
- 		transition: 0.5s;
+/* Back to Portal Button - Hidden */
+.back-to-portal-button {
+  font-weight: bold;                       /* Make the font bold */
+  background-color: transparent !important; /* Make the background transparent */
+  border: 0px;                             /* Remove border */
+  font-size: 16px;                         /* Set font size */
+  color: white !important;                 /* Set text color to white */
+  text-transform: uppercase;               /* Make the text uppercase */
+  display: none !important;                /* Hide the button */
 }
 
-/* Display Client Portal button on hover */
-.hidden-print.btn.btn-default.ng-scope:hover{
-    background-color: #C06917;
-    color: #FFFFFF;
+.back-to-portal-button svg {
+  color: white !important;                 /* Set icon color to white */
+  display: none !important;                /* Hide the SVG icon */
+}
+
+/* =========================
+    Footer 
+   ========================= */
+
+/* Footer area fixed to bottom */
+
+.form-viewer-footer {
+   position: fixed;
+   bottom: 0;
+   width: 100vw;
+   margin: 0 -50vw;
+   left: 50%;
+   right: 50%;
+   justify-content: center;
+   align-content: center;
+   background-color: #FDB386;
+   z-index: 99;
+   min-height: 50px;
+}
+
+@media print {
+.form-viewer-footer {
+   position: relative!important;
+}
+}
+
+.form-viewer-footer-content {
+   max-width: 100%!important;
+   flex-direction: row;
+   justify-content: center;
+   padding:0px;
+}
+
+.form-viewer-footer__buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 0 24px;
+}
+
+/* Footer area colour*/
+.form-viewer-footer {
+   background-color: #FDB386;
+}
+
+/* floating total */
+.proposal-total {
+   position: fixed;
+   bottom: 80px;
+   right: 20px;
+   background-color: #FDB386; /* brand color */
+   border-radius: 16px;
+   padding: 15px 20px;
+   font-family: Helvetica, sans-serif;
+   font-weight: normal;
+   text-align: center;
+   z-index: 9999;
+   transition: 0.3s ease;
+}
+
+/* Full-width hero override */
+.dubsado-form {
+    max-width: 100% !important;
+    padding: 0 !important;
 }
 
 .toast-warning {
