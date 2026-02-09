@@ -75,7 +75,6 @@ font-style: italic;
    PACKAGE BUTTON STYLES
    ========================= */
 
-<style>
 
 /* Package button unselected */
     span.btn.btn-squared.border-around {
@@ -110,7 +109,6 @@ font-style: italic;
     color:white!important;
     }
 
-</style>
 
 /* =========================
     HEADER BAR
