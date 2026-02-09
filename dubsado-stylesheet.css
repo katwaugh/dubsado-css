@@ -76,6 +76,39 @@ font-style: italic;
    ========================= */
 
 
+/* Package button unselected */
+.form-package-element .btn.btn-squared.border-around {
+    font-family: "Helvetica";
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 15px 25px;
+    background-color:#F6E5D6;
+    border-color:#C06917;
+    border-width:2px;
+    border-radius:40px;
+    width:200px;
+    transition: 0.5s;
+}
+
+/* Package button unselected hover */
+.form-package-element .packageNotSelected .btn.btn-squared.border-around:hover {
+    background-color: #C06917!important;
+    border-color:#C06917!important;
+    color:white!important;
+}
+
+/* Package button selected */
+.form-package-element .packageSelected .btn.btn-squared.border-around{
+    background-color: #C06917!important;
+    border-color:#C06917!important;
+    color:white!important;
+}
+
+/* Change button text to selected */
+.packageSelected .btn:after{
+    content: "ED";
+}
 
 /* =========================
     HEADER BAR
